@@ -146,32 +146,32 @@ while (j < numericArray.length && numericArray[j] !== 32) {
 
 const charactersArray = ["g", "n", "u", "z", "d"];
 
-const alphabet = [a, b, c, d, e, f, g, h, i, l, m, n, o, p, q, r, s, t, u, v, z];
+const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "z"];
 
 const positionArray = [];
 
 for (let i = 0; i < charactersArray.length; i++) {
   const charactersArrayObj = charactersArray[i];
   for (let j = 0; j < alphabet.length; j++) {
-    const alphabetObj = alphabet[j];
-  }
-  switch (charactersArrayObj) {
-    case "g":
-      positionArray.push();
-      break;
-    case "n":
-      positionArray.push(12);
-      break;
-    case "u":
-      positionArray.push(19);
-      break;
-    case "z":
-      positionArray.push(21);
-      break;
-    case "d":
-      positionArray.push(4);
-      break;
+    if (charactersArrayObj === alphabet[j]) {
+      switch (charactersArrayObj) {
+        case "g":
+          positionArray.push(j + 1);
+          break;
+        case "n":
+          positionArray.push(j + 1);
+          break;
+        case "u":
+          positionArray.push(j + 1);
+          break;
+        case "z":
+          positionArray.push(j + 1);
+          break;
+        case "d":
+          positionArray.push(j + 1);
+          break;
+      }
+    }
   }
 }
-
 console.log(positionArray);
