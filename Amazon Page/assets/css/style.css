@@ -1,1 +1,139 @@
-/* Your styles here */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e9edee;
+}
+
+.headercolor {
+  background-color: #222f3f;
+  border: #222f3f solid;
+}
+
+.menucolor {
+  color: white;
+  border: #364757 solid;
+  background-color: #364757;
+}
+
+header {
+  text-align: left;
+  height: 80px;
+}
+
+header img {
+  padding-block: 1rem;
+  padding-left: 2rem;
+  width: 150px;
+}
+
+header + div {
+  height: 40px;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+}
+
+header + div p {
+  padding-block: 0.5rem;
+}
+
+main {
+  padding-inline: 2rem;
+}
+
+main > div:nth-child(1) {
+  border: #f56600 solid;
+  background-color: #f56600;
+  height: 40px;
+  margin-block: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+main > div p {
+  padding-block: 0.5rem;
+}
+
+.title {
+  background-image: url(../images/bg-image.png);
+  width: 100%;
+  background-size: contain;
+  color: white;
+  text-align: center;
+  padding-block: 6rem;
+  font-weight: bold;
+}
+
+.title h1 {
+  font-size: 3rem;
+}
+
+.title h3 {
+  font-size: 1.5rem;
+}
+
+main > section {
+  padding-block: 4rem;
+  border: white;
+  background-color: white;
+  margin-block: 3rem;
+  padding-top: 0;
+}
+
+main > section img {
+  width: 23%;
+  aspect-ratio: 0.8;
+  border-radius: 5%;
+  margin-inline: 1rem;
+}
+
+section div:nth-child(2) {
+  padding-block: 2rem;
+  text-align: center;
+}
+
+section p {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+section span {
+  color: #0e5f71;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.paragrafo {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+.span {
+  color: #0e5f71;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+section + div + div + div {
+  padding-block: 2rem;
+  height: 30px;
+  text-align: center;
+}
+p a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+footer {
+  height: 250px;
+  text-align: center;
+}
+
+footer img {
+  padding-block: 5rem;
+  width: 250px;
+}
