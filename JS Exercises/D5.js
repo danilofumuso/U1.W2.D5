@@ -130,14 +130,16 @@ const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 
 let j = 0;
 
 while (j < numericArray.length && numericArray[j] !== 32) {
-  console.log(numericArray[j]); //mi da tutti i numeri fino al 32 escluso!
-
+  console.log(numericArray[j]);
   j++;
+  if (numericArray[j] === 32) {
+    console.log(numericArray[j]);
+  }
 }
-console.log(numericArray[j]); //mi da il numero 32!
 
 /* ESERCIZIO 10
-    Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
+    Partendo dall'array fornito e utilizzando un costrutto switch, 
+    genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
