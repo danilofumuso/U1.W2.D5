@@ -146,13 +146,18 @@ while (j < numericArray.length && numericArray[j] !== 32) {
 
 const charactersArray = ["g", "n", "u", "z", "d"];
 
+const alphabet = [a, b, c, d, e, f, g, h, i, l, m, n, o, p, q, r, s, t, u, v, z];
+
 const positionArray = [];
 
 for (let i = 0; i < charactersArray.length; i++) {
   const charactersArrayObj = charactersArray[i];
+  for (let j = 0; j < alphabet.length; j++) {
+    const alphabetObj = alphabet[j];
+  }
   switch (charactersArrayObj) {
     case "g":
-      positionArray.push(7);
+      positionArray.push();
       break;
     case "n":
       positionArray.push(12);

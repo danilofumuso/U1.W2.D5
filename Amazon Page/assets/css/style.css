@@ -80,6 +80,7 @@ main > section {
 }
 
 main > section img {
+  object-fit: cover;
   width: 23%;
   aspect-ratio: 0.8;
   border-radius: 5%;
@@ -104,6 +105,13 @@ section span {
   font-size: 1.5rem;
 }
 
+section + div img {
+  width: 100%;
+}
+
+section + div + div img {
+  width: 100%;
+}
 .paragrafo {
   text-align: center;
   font-weight: bold;
@@ -117,7 +125,7 @@ section span {
   font-size: 1.5rem;
 }
 
-section + div + div + div {
+main + div {
   padding-block: 2rem;
   height: 30px;
   text-align: center;
